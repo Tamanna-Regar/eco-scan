@@ -53,22 +53,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
             onTap: () => _showLanguageDialog(),
           ),
 
-          // Dark Mode
-          ListTile(
-            leading: const Icon(Icons.dark_mode, color: Colors.green),
-            title: const Text("Dark Mode"),
-            trailing: Switch(
-              value: themeNotifier.value == ThemeMode.dark,
-              activeThumbColor: Colors.green,
-              activeTrackColor: Colors.green.withAlpha(128),
-              onChanged: (bool value) {
-                themeNotifier.value = value ? ThemeMode.dark : ThemeMode.light;
-                setState(() {});
-              },
-            ),
-          ),
-          const Divider(),
-
           // About App
           ListTile(
             leading: const Icon(Icons.info, color: Colors.green),
