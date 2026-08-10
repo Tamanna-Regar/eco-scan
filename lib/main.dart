@@ -4,7 +4,7 @@ import 'dart:async';
 import 'screens/login_screen.dart';
 import 'screens/dashboard_screen.dart';
 
-// Ye global notifier puri app mein theme change handle karega
+// This global notifier manages the theme change across the entire app.
 final ValueNotifier<ThemeMode> themeNotifier = ValueNotifier(ThemeMode.light);
 
 void main() async {
@@ -30,7 +30,7 @@ class EcoScanApp extends StatelessWidget {
           theme: ThemeData.light(),
           darkTheme: ThemeData.dark(),
           themeMode: currentMode,
-          // Yahan humne SplashScreen ko entry point banaya hai
+          // Here we have made the SplashScreen the entry point.
           home: SplashScreen(isLoggedIn: isLoggedIn),
         );
       },

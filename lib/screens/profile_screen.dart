@@ -14,7 +14,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   File? _image; // Ye variable photo store karega
   final ImagePicker _picker = ImagePicker();
 
-  // Gallery se photo select karne ka function
+  // Gallery photos
   Future<void> _pickImage() async {
     final XFile? pickedFile =
         await _picker.pickImage(source: ImageSource.gallery);
@@ -36,7 +36,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             const SizedBox(height: 30),
             // Profile Picture
             GestureDetector(
-              onTap: _pickImage, // Photo pe click karte hi gallery khulegi
+              onTap: _pickImage, // Clicking on the photo will open the gallery
               child: CircleAvatar(
                 radius: 60,
                 backgroundColor: Colors.green,

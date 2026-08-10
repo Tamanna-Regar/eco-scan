@@ -16,7 +16,7 @@ class _SignupScreenState extends State<SignupScreen> {
 
   Future<void> registerUser(
       String username, String email, String password) async {
-    // Django Django signup endpoint URL (Apne backend view ke mutabik change kar sakte hain)
+    // You can change this according to your backend view).
     const String url = 'http://localhost:8000/api/signup/';
 
     setState(() {
@@ -39,7 +39,7 @@ class _SignupScreenState extends State<SignupScreen> {
         _showSnackBar(
             "Account Created Successfully! Please Login.", Colors.green);
 
-        // Account banne ke baad automatic Login Screen par wapas bhejna
+        // Redirecting to the Login Screen automatically after account creation
         Navigator.pop(context);
       } else {
         final errorData = jsonDecode(response.body);

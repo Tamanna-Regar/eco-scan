@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'home_screen.dart'; // Tumhari home screen file
+import 'home_screen.dart'; 
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -25,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Colors.green, // Background color
+      backgroundColor: Colors.green, // Background color 
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

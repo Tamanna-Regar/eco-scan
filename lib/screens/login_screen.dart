@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:shared_preferences/shared_preferences.dart'; // Session management ke liye
+import 'package:shared_preferences/shared_preferences.dart'; // Session management
 import 'signup_screen.dart';
 import 'dashboard_screen.dart';
 
@@ -35,7 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
       );
 
       if (response.statusCode == 200) {
-        // Login success: Session save karo
+        // Login success
         final prefs = await SharedPreferences.getInstance();
         await prefs.setBool('isLoggedIn', true);
 
@@ -54,7 +54,7 @@ class _LoginScreenState extends State<LoginScreen> {
             "Error: ${errorData['error'] ?? 'Login failed'}", Colors.redAccent);
       }
     } catch (e) {
-      _showSnackBar("Backend server se connect nahi ho paya!", Colors.orange);
+      _showSnackBar("Failed to connect to the backend server", Colors.orange);
     } finally {
       if (mounted) {
         setState(() {

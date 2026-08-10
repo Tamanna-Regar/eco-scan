@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart'; // Import zaroori hai
+import 'package:shared_preferences/shared_preferences.dart';
 import 'scan_screen.dart';
 
 class HomeScreen extends StatefulWidget {

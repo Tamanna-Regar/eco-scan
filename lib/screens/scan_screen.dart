@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'dart:typed_data';
 import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:shared_preferences/shared_preferences.dart'; // Import zaroori hai
+import 'package:shared_preferences/shared_preferences.dart'; // Import for SharedPreferences
 import 'result_screen.dart';
 
 class ScanScreen extends StatefulWidget {
