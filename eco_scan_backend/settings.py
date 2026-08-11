@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)wf#n_($9h)qir6kpyy0uo_*l3djxn$^wfp_*-$pd#iwcn$b9$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['eco-scan-1.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -120,5 +120,4 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# settings.py ke bilkul last mein add karein
 CORS_ALLOW_ALL_ORIGINS = True
